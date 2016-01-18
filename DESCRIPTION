@@ -1,0 +1,12 @@
+Package: spcreml
+Type: Package
+Title: Spatial Modelling using Composite REML
+Version: 0.1
+Date: 2016-01-08
+Authors@R: person("Kohleth, Chia", email = "kohleth@gmail.com", role = c("aut", "cre"))
+Description: Spatial Modelling using Composite REML.
+License: GPL-3
+LazyData: TRUE
+Imports:
+    geoR (>= 1.7-5.1),foreach (>= 1.4.3)
+RoxygenNote: 5.0.1
