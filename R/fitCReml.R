@@ -7,10 +7,11 @@
 #' @param init named vector of initial value for optimiation of \code{recl}. Must (at least) contain named elements \emph{sigma2} and \emph{phi}. Can also contain \emph{nugget} and \emph{kappa}.
 #' @param poinstj A list of row numbers that indicates which row belongs to block j (block j is itself a union of block k and block l). See Details.
 #' @param pointsjpair A list of pair integers from \code{1} to \code{length(pointsj)}. Each pair indicates which pairs of \code{pointjs} components should be bundled together in the variance calculation. See Details.
-#' @param pointsk
+#' @param pointsk not used.
 #' @param cov.model character string that specifies the spatial covariance model. See \code{?geoR::cov.spatial}
 #' @param lower Numeric vector of lower bound for the estimating parameters. Default to NULL (no lower bound).
 #'
+#' @export
 
 
 fitCReml=function(form,data,dS,coordsMat,init,pointsj,pointsjpair,pointsk,cov.model=cov.model,lower=NULL){

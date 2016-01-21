@@ -8,6 +8,8 @@
 #' @param Xmat the design matrix (not the data.frame)
 #' @param pointsj A list. Each list contains the row number of the data matrix (Y or Xmat or coordsMat) that correspond to the (k,l) block.
 #' @param cov.model This is passed to \code{geoR::cov.spatial}
+#'
+#' @export
 
 recl=function(theta,coordsMat,Y,Xmat,pointsj,cov.model="exp",...){
   if(length(unique(c(nrow(coordsMat),length(Y),nrow(Xmat))))>1)stop("coordsMat, Y, and X must be of the same length (or have the same number of rows).")
